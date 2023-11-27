@@ -1,7 +1,6 @@
 // from folke
 // https://github.com/folke/zmk-config/blob/main/config/includes/mods.dtsi
 
-
 #define HM_TAPPING_TERM 280
 #define HM_TAPPING_TERM_FAST 200
 
@@ -73,4 +72,4 @@
     };
 
   };
-};
+};;
