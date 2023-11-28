@@ -33,7 +33,7 @@
    _LTX &kp Q        &kp W       &kp E        &kp R         &kp T               &kp Y &kp U          &kp I        &kp O        &kp P           _RTX
    _LMX &hml LGUI A  &hml LALT S &hml LCTRL D &hml LSHIFT F &kp G               &kp H &hmr RSHIFT J  &hmr RCTRL K &hmr RALT L  &hmr RGUI SEMI  _RMX
    _LBX &kp Z        &kp X       &kp C        &kp V         &kp B      _MBX     &kp N &kp M          &kp COMMA    &kp DOT      &kp FSLH        _RBX
-                                        _LHX &kp LGUI &lt LOWER ESC &kp BSPC   &kp SPACE &lt RAISE RET &kp RALT _RHX
+                                        _LHX &kp LGUI &ht LOWER ESC &kp BSPC   &kp SPACE &ht RAISE RET &kp RALT _RHX
                         >;
                 };
 
@@ -54,9 +54,9 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
+// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
+// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    _LTX &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT           &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR _RTX
