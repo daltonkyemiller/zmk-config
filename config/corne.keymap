@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #include "keys/36.h"
-#include "includes/mods.dtsi"
 
 / {
     chosen {
@@ -13,6 +12,7 @@
 };
 
 #include "keys/base.h"
+#include "includes/mods.dtsi"
 
 / {
         keymap {
