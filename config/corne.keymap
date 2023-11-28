@@ -39,6 +39,20 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
+// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
+// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
+// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   _LTX &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT           &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR _RTX
+   _LMX &trans   &trans &trans   &trans   &trans              &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH _RMX
+   _LBX &trans   &trans &trans   &trans   &trans     _MBX     &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE _RBX
+                     _LHX &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT _RHX
+                        >;
+                };
+
+                raise_layer {
+// -----------------------------------------------------------------------------------------
 // |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
 // | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |
 // |     |     |     |     |     |   |     |     |     |     |     |
@@ -49,20 +63,6 @@
    _LMX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans _RMX
    _LBX &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans _RBX
                   _LHX &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT _RHX
-                        >;
-                };
-
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   _LTX &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT           &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR _RTX
-   _LMX &trans   &trans &trans   &trans   &trans              &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH _RMX
-   _LBX &trans   &trans &trans   &trans   &trans     _MBX     &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE _RBX
-                     _LHX &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT _RHX
                         >;
                 };
         };
