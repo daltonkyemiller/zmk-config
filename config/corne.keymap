@@ -16,6 +16,7 @@
 
 #include "keys/base.h"
 #include "includes/mods.dtsi"
+#include "includes/settings.dtsi"
 
 / {
         keymap {
