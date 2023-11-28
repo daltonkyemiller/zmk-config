@@ -70,5 +70,13 @@
       retro-tap; // use tap when key is used without another key
     };
 
+    lt: later_tap {
+      flavor = "balanced";
+      tapping-term-ms = <200>;
+      quick-tap-ms = <175>;
+    };
+
+
+    }
   };
 };

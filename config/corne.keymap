@@ -3,6 +3,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+#define LOWER 1
+#define RAISE 2
+
 #include "keys/36.h"
 
 / {
@@ -29,7 +32,7 @@
    _LTX &kp Q        &kp W       &kp E        &kp R         &kp T               &kp Y &kp U          &kp I        &kp O        &kp P           _RTX
    _LMX &hml LGUI A  &hml LALT S &hml LCTRL D &hml LSHIFT F &kp G               &kp H &hmr RSHIFT J  &hmr RCTRL K &hmr RALT L  &hmr RGUI SEMI  _RMX
    _LBX &kp Z        &kp X       &kp C        &kp V         &kp B      _MBX     &kp N &kp M          &kp COMMA    &kp DOT      &kp FSLH        _RBX
-                                        _LHX &kp LGUI &tm 1 ESC &kp BSPC   &kp SPACE &tm 2 RET &kp RALT _RHX
+                                        _LHX &kp LGUI &lt LOWER ESC &kp BSPC   &kp SPACE &rt RAISE RET &kp RALT _RHX
                         >;
                 };
 
