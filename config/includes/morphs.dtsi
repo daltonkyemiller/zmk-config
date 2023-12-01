@@ -1,0 +1,11 @@
+/ {
+  behaviors {
+    del_morph: del_morph {
+      compatible = "zmk,behavior-mod-morph";
+      label = "DEL_MORPH";
+      #binding-cells = <0>;
+      bindings = <&kp BSPC>, <&kp DEL>;
+      mods = <(MOD_RSFT)>;
+    };  
+  };
+};
